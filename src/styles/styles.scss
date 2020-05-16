@@ -1,19 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 // Fonts goes here
-$font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
 // Colors goes here
 $primary: #131217;
 
 body {
   background: #131217 !important;
 }
-.site_date_time{
-    font-family: 'Montserrat', serif;
-    letter-spacing: 0.05rem;
+.site_date_time {
+  font-family: "Montserrat", serif;
+  letter-spacing: 0.05rem;
 }
 .site_title {
-    font-family: 'Montserrat', serif;
-    letter-spacing: 0.04rem;
-    .nav{
-    }
+  font-family: "Montserrat", serif;
+  letter-spacing: 0.04rem;
+  .nav {
+  }
+}
+
+.main-screen {
+  min-height: 70vh;
+  max-height: 70vh;
+}
+
+.slides-main-screen {
+  min-height: 70vh;
+  max-height: 70vh;
+}
+
+.slides-details-div {
+  font-family: "Montserrat", serif !important;
+  background: #3a485c;
+  h4 {
+    font-family: "Montserrat", serif !important;
+  }
+}
+.slides-details-div-para{
+    font-size: 1.5vh;
 }
