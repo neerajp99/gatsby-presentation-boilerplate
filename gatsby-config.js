@@ -2,7 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby-Colorful-Presentation`,
     description: `Boilerplate for creating colorful text presentations in Gatsby, React`,
-    author: `@gatsbyjs`,
+    author: `Neeraj Pandey`,
+    event: `@PyData Delhi @PyData @Python @Numfocus`,
+    twitter: `@neerajp99`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -10,7 +12,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `slides`,
-        path: `${__dirname}/src/slides`,
+        path: `${__dirname}/src/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -28,6 +30,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: "src",
+        path: `${__dirname}/src/`,
+      },
+    },
+    `gatsby-transformer-remark`,
     `gatsby-plugin-postcss`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
