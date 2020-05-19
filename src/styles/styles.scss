@@ -37,6 +37,40 @@ body {
     font-family: "Montserrat", serif !important;
   }
 }
-.slides-details-div-para{
-    font-size: 1.5vh;
+.slides-details-div-para {
+  font-size: 1.5vh;
+}
+
+.slide-main {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  text-align: center;
+  -webkit-overflow-scrolling: touch;
+  flex-direction: column;
+}
+h1 {
+  width: 90%;
+  font-family: font;
+  font-size: 8vh !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  margin-bottom: 0.5rem !important;
+}
+
+pre {
+  flex-direction: column !important;
+  margin-top: 3vh !important;
+  width: 50%;
+  margin-bottom: 1rem !important;
+  color: #fff;
+  font-family: "Montserrat", serif !important;
+  padding: 30px 50px 30px !important;
+}
+code {
+    font-size: 2vh !important;
 }
