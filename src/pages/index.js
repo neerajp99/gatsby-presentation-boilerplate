@@ -8,8 +8,13 @@ import Layout from "../components/layout"
 
 const IndexPage = () => (
   <Layout>
-    <div className="container mx-auto my-8 main-screen bg-blue-500">
-
+    <div className="container mx-auto my-8 main-screen bg-gray-900 slide-main">
+      <h1>The Joy of creating art with code.</h1>
+      <pre>
+        <code>
+          Neeraj Pandey.
+        </code>
+      </pre>
     </div>
   </Layout>
 )
