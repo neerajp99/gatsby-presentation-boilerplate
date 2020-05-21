@@ -1,6 +1,6 @@
-import React from "react"
+import React, { useRef, useEffect } from "react"
 import Layout from "../components/layout"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import "../styles/styles.scss"
 
 const Slides = () => {
@@ -44,15 +44,16 @@ const Slides = () => {
           <ol className="slides-details-list">
             {data.allMarkdownRemark.edges.map((index, key) => (
               <li key={key} className="slides-details-list px-16 ">
-                <div className="slides-details-div px-4 py-4 max-w-4xl text-gray-100 mt-6">
-                  <span className="text-xs bg-blue-700 px-2 py-1 rounded-full">
-                    Slide : {key+1}
-                  </span>
-                  <h4 className="my-4 py-1 font-light">
-                    {data.allMarkdownRemark.edges[key].node.frontmatter.title}
-                  </h4>
-
-                </div>
+                <Link to={`/slides/${key}`}>
+                  <div className="slides-details-div px-4 py-4 max-w-4xl text-gray-100 mt-6">
+                    <span className="text-xs bg-blue-700 px-2 py-1 rounded-full">
+                      Slide : {key + 1}
+                    </span>
+                    <h4 className="my-4 py-1 font-light">
+                      {data.allMarkdownRemark.edges[key].node.frontmatter.title}
+                    </h4>
+                  </div>
+                </Link>
               </li>
             ))}
           </ol>
