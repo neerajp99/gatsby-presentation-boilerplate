@@ -34,7 +34,6 @@ const Slides = () => {
   )
   console.log(data)
   return (
-    <Layout>
       <div className="container mx-auto my-8 slides-main-screen bg-gray-900 overflow-scroll">
         <h1 className="subpixel-antialiased text-2xl font-normal px-20 py-8 text-white">
           {" "}
@@ -44,7 +43,7 @@ const Slides = () => {
           <ol className="slides-details-list">
             {data.allMarkdownRemark.edges.map((index, key) => (
               <li key={key} className="slides-details-list px-16 ">
-                <Link to={`/slides/${key}`}>
+                <Link to={`/slides/${key + 1}`}>
                   <div className="slides-details-div px-4 py-4 max-w-4xl text-gray-100 mt-6">
                     <span className="text-xs bg-blue-700 px-2 py-1 rounded-full">
                       Slide : {key + 1}
@@ -59,7 +58,7 @@ const Slides = () => {
           </ol>
         </div>
       </div>
-    </Layout>
+
   )
 }
 
