@@ -33,6 +33,7 @@ body {
 .slides-details-div {
   font-family: "Montserrat", serif !important;
   background: #3a485c;
+  margin: 0 auto;
   h4 {
     font-family: "Montserrat", serif !important;
   }
@@ -51,6 +52,9 @@ body {
   text-align: center;
   -webkit-overflow-scrolling: touch;
   flex-direction: column;
+  div {
+    width: 80% !important;
+  }
 }
 h1 {
   width: 90%;
@@ -60,6 +64,15 @@ h1 {
   color: #fff !important;
   font-weight: bold !important;
   margin-bottom: 0.5rem !important;
+}
+h2 {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Montserrat", font;
+  font-size: 4vh !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  margin-bottom: 2rem !important;
 }
 h3 {
   margin-top: 4vh;
@@ -77,10 +90,9 @@ pre {
   color: #fff;
   font-family: "Montserrat", serif !important;
   padding: 30px 50px 30px !important;
-
 }
 code {
-    font-size: 2vh !important;
+  font-size: 2vh !important;
 }
 
 li {
@@ -91,6 +103,7 @@ li {
   margin-top: 4vh;
   text-align: left;
   display: inline;
+  margin-top: 2rem;
   blockquote {
     width: 85% !important;
     margin: 0 auto;
@@ -108,3 +121,7 @@ li {
     margin: 0 auto;
   }
 }
+// img{
+//     height: 30vh !important;
+//     margin-bottom: 2rem !important;
+// }
