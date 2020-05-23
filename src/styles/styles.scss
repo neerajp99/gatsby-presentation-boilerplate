@@ -46,7 +46,6 @@ body {
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  width: 100vw;
   height: 100vh;
   padding: 1rem;
   text-align: center;
@@ -55,22 +54,57 @@ body {
 }
 h1 {
   width: 90%;
+  margin: 0 auto;
   font-family: font;
   font-size: 8vh !important;
   color: #fff !important;
   font-weight: bold !important;
   margin-bottom: 0.5rem !important;
 }
+h3 {
+  margin-top: 4vh;
+  font-family: "Montserrat", font;
+  color: red;
+  font-weight: 600;
+}
 
 pre {
   flex-direction: column !important;
   margin-top: 3vh !important;
-  width: 50%;
+  width: 70%;
+  margin: 0 auto;
   margin-bottom: 1rem !important;
   color: #fff;
   font-family: "Montserrat", serif !important;
   padding: 30px 50px 30px !important;
+
 }
 code {
     font-size: 2vh !important;
+}
+
+li {
+  width: 85% !important;
+  color: #fff;
+  font-family: "Montserrat", serif !important;
+  margin: 0 auto;
+  margin-top: 4vh;
+  text-align: left;
+  display: inline;
+  blockquote {
+    width: 85% !important;
+    margin: 0 auto;
+    background: #28303e;
+    margin-top: 2vh;
+    margin-bottom: 2vh !important;
+    // display: list-item;
+    // list-style-type: disc;
+    // list-style-position: inside;
+    padding: 10px 10px 10px;
+  }
+
+  p {
+    width: 85%;
+    margin: 0 auto;
+  }
 }
