@@ -12,27 +12,32 @@ import PropTypes from "prop-types"
 import { navigate, StaticQuery, graphql } from "gatsby"
 
 class Layout extends Component {
-  NEXT = [13, 32, 39]
-  PREV = 37
   I = 1
+  PREV = 37
+  NEXT = [13, 32, 39]
 
   navigate = ({ keyCode }) => {
-    console.log()
+    let current
+    if (typeof this.props.pageContext != "undefined") {
+      current = parseInt(this.props.pageContext.slug)
+    } else {
+      current = this.I
+    }
 
-    if (this.I) {
-      if (keyCode === this.PREV && this.I === 0) {
+    if (current) {
+      if (keyCode === this.PREV && current === 0) {
         return false
       } else if (
         this.NEXT.indexOf(keyCode) !== -1 &&
-        this.I === this.props.totalCount
+        current === this.props.totalCount
       ) {
         return false
       } else if (this.NEXT.indexOf(keyCode) !== -1) {
-        navigate(`/slides/${this.I + 1}`)
-        this.I = this.I + 1
-    } else if (keyCode === this.PREV && this.I >= 2) {
-        navigate(`/slides/${this.I - 1}`)
-          this.I = this.I - 1
+        navigate(`/slides/${current + 1}`)
+        current = current + 1
+      } else if (keyCode === this.PREV && current >= 2) {
+        navigate(`/slides/${current - 1}`)
+        current = current - 1
       }
     }
   }
@@ -45,6 +50,7 @@ class Layout extends Component {
     document.removeEventListener("keydown", this.navigate)
   }
   render() {
+    console.log(this.props)
     const { location, children, totalCount } = this.props
     return (
       <>
@@ -88,7 +94,11 @@ export default props => (
       }
     `}
     render={data => (
-      <Layout totalCount={data.allMarkdownRemark.totalCount} {...props} />
+      <Layout
+        totalCount={data.allMarkdownRemark.totalCount}
+        slug={data.allMarkdownRemark.edges}
+        {...props}
+      />
     )}
   />
 )
