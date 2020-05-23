@@ -18,16 +18,14 @@ export const query = graphql`
 
 const Post = props => {
   return (
-    <Layout>
-      <div className="mx-auto my-8 main-screen bg-blue-500">
-        <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: props.data.markdownRemark.html,
-          }}
-        ></div>
-      </div>
-    </Layout>
+    <div className="container mx-auto my-8 main-screen bg-gray-900 slide-main">
+      {/*<h1>{props.data.markdownRemark.frontmatter.title}</h1>*/}
+      <div
+        dangerouslySetInnerHTML={{
+          __html: props.data.markdownRemark.html,
+        }}
+      ></div>
+    </div>
   )
 }
 
