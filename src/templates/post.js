@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
+import { CSSTransition } from "react-transition-group"
 
 // Fetching the content of a single slide and passing as props
 export const query = graphql`
