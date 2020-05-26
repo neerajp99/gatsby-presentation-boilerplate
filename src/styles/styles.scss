@@ -21,7 +21,7 @@ body {
 }
 
 .main-screen {
-  min-height: 70vh;
+  height: 70vh;
   max-height: 70vh;
 }
 
@@ -75,7 +75,8 @@ h2 {
   margin-bottom: 2rem !important;
 }
 h3 {
-  margin-top: 4vh;
+  margin-top: 8vh;
+  margin-bottom: 5vh;
   font-family: "Montserrat", font;
   color: red;
   font-weight: 600;
@@ -121,7 +122,73 @@ li {
     margin: 0 auto;
   }
 }
-// img{
-//     height: 30vh !important;
-//     margin-bottom: 2rem !important;
-// }
+@media only screen and (max-width: 768px) {
+  * {
+    overflow: hidden !important;
+  }
+  h1 {
+    width: 95%;
+    font-size: 4vh !important;
+    color: #fff !important;
+    font-weight: bold !important;
+    margin-bottom: 0.5rem !important;
+  }
+  h2 {
+    width: 95%;
+    font-size: 5vw !important;
+    margin-top: 25% !important;
+  }
+  h3 {
+    font-size: 4vw !important;
+  }
+  h4 {
+  }
+  p {
+    width: 100% !important;
+    font-size: 1.2vh;
+  }
+  pre {
+    width: 150% !important;
+    overflow-x: hidden;
+    text-align: left !important;
+  }
+  code {
+    text-align: left !important;
+    font-size: 1.5vh !important;
+    margin-left: -10%;
+  }
+  .main-screen {
+    height: 60vh !important;
+  }
+  .site_date_time {
+    visibility: none !important;
+    opacity: 0;
+  }
+  .site_title {
+    width: 200% !important;
+    text-align: center;
+    margin: 0 auto;
+  }
+  li {
+    blockquote {
+      width: 105% !important;
+      text-align: left;
+      font-size: 1vw;
+    }
+  }
+  .footer_left {
+    display: none !important;
+    visibility: none !important;
+    opacity: 0;
+    text-align: center;
+  }
+  .footer_right {
+    float: none !important
+    span {
+      float: none !important
+    }
+  }
+  .float-right{
+      float: none !important
+  }
+}
