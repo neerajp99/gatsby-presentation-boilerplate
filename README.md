@@ -9,6 +9,5 @@
 
 	> To add slides, add inside `/src/posts/` in increasing order.
 
- Work in progres...
 
 
