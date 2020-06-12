@@ -52,9 +52,9 @@ const Header = ({ siteTitle }) => {
         <div className="site_date_time text-xl text-white text-right">
           <nav className="w-1/2 p-2 flex float-right nav">
             <div className="w-1/5 h-12 text-left">{time.slice(0, 4)}</div>
-            <div className="w-1/5 h-12 text-left ">{time.slice(4, 9)}</div>
-            <div className="w-1/5 h-12 text-left -mx-3">{time.slice(9, 13)}</div>
-            <div className="w-1/5 h-12 text-left -mx-2">
+            <div className="w-1/5 h-12 text-left -mx-3">{time.slice(4, 9)}</div>
+            <div className="w-1/5 h-12 text-left mx-1">{time.slice(9, 13)}</div>
+            <div className="w-1/5 h-12 text-left -mx-4">
               {time.slice(13, 15)}
             </div>
           </nav>
