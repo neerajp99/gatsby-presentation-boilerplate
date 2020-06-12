@@ -9,5 +9,7 @@
 
 	> To add slides, add inside `/src/posts/` in increasing order.
 
+![Alt text](./images/gatsby.png "Example")
+
 
 
